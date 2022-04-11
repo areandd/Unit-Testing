@@ -1,20 +1,27 @@
+const fromEuroToDollar = function(valueInEuro){
+    let valueInDollar = valueInEuro * 1.2;
+    return valueInDollar;
+}
 
-// let oneEuroIs = {
-//     "JPY": 127.9, // japan yen
-//     "USD": 1.2, // us dollar
-//     "GBP": 0.8, // british pound
+const fromDollarToYen = function(valueInDollar){
+    let valueInYen = valueInDollar * 125.58;
+    return valueInYen;
+}
+
+const fromYenToPound= function(valueInYen){
+    let valueInPound = valueInYen * .0061;
+    return valueInPound;
+}
+
+module.exports = { fromEuroToDollar, fromDollarToYen, fromYenToPound };
+
+
+
+
+// const sum = (a,b) => {
+//     return a + b
 // }
 
-const dollarYen = (dollar, yen) => {
-    return dollar * yen
-}
+// console.log(sum(7,3))
 
-const euroDollar = (euro, dollar) => {
-    return euro * dollar
-}
-
-const yenPound = (yen, pound) => {
-    return yen * pound
-}
-
-module.exports = { dollarYen, euroDollar, yenPound };
+// module.exports = { sum };
